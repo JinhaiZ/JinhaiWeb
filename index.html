@@ -1,6 +1,5 @@
-</html xmlns="http://www.w3.org/1999/xhtml">
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myWeb">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +10,12 @@
     <meta name="author" content="Jinhai ZHOU">
     <title>Jinhai ZHOU</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom style for bootstrap navbar-->
+    <link href="assets/css/navbar-fixed-top.css" rel="stylesheet">
+    <!-- legacy CSS -->
+    <link href="assets/css/legacy/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/legacy/typography.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -20,21 +24,23 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container" role="main">
-      <div class="jumbotron">
-        <h1>Jinhai ZHOU</h1>
-        <p>A passionate and creative software engineer</p>
-      </div>
-    </div>
-    
-
-
+    <div ui-view="header"></div>
+    <div ui-view="content"></div>
+    <div ui-view="footer"></div>
 
     <!--Copyright © Jinhai's page-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery/jquery-3.1.1.min.js"></script>
+    <!-- AngularJS -->
+    <script src="assets/js/angularjs/angular.min.js"></script>
+    <script src="assets/js/angularjs/angular-route.min.js"></script>
+    <script src="assets/js/angularjs/angular-ui-router.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+     <!-- AngularJS App -->
+    <script src="assets/js/myWeb/myWeb.js"></script>
+    <script src="assets/js/myWeb/myWeb.controller.js"></script>
+    <script src="assets/js/myWeb/myWeb.service.js"></script>
   </body>
 </html>
