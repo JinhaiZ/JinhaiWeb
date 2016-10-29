@@ -1,11 +1,11 @@
 'use strict';
 
 angular.module('myWeb', ['ui.router'])
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider
             // route for the home page
             .state('home', {
-                url:'/',
+                url: '/',
                 views: {
                     'header': {
                         templateUrl : 'views/navbar/home.navbar.view.html',
@@ -23,12 +23,12 @@ angular.module('myWeb', ['ui.router'])
 
             // route for the aboutus page
             .state('contact', {
-                url:'/contact',
+                url: '/contact',
                 views: {
                     'header': {
                         templateUrl : 'views/navbar/contact.navbar.view.html',
                     },
-                    'contact': {
+                    'content': {
                         templateUrl : 'views/contact.view.html',
                         // controller  : 'IndexController'
                     },
