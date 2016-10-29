@@ -6,9 +6,10 @@
   background-position: top;
   height: 200px;
 }
-#background h1, h3{
+.jumbotron.white{
   color: white;
 }
+
 #myTab{
     margin: 30px auto;
 }
